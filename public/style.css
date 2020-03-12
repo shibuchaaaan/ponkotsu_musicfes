@@ -1,0 +1,211 @@
+/*
+ - 〜479px：スマートフォン縦
+ - 480px〜767px：スマートフォン横
+ - 768px〜991px：タブレット
+ - 992px〜1279px：小型PC
+ - 1280px〜：大型PC
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400,500,700,900&display=swap&subset=japanese');
+
+ /* small(smartPhone) first CSS. */
+/* Common */
+html, body {
+  -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #222;
+}
+a {
+ text-decoration: none;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Header */
+header {
+  background-color: #9fc8f7;
+  padding: 0.5rem 0;
+}
+.fa-twitter {
+  padding: 5px 0 6px;
+  font-size: 44px;
+  color: #00aced;
+}
+.fa-twitter:hover {
+  color: #d5d5d5;
+}
+/* navigation bar */
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  text-align: center;
+  margin-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+/* section */
+.section-title-area {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+.section-title-border {
+  height: 4px;
+  background-color: #2163af;
+  width: 15%;
+}
+.display-4 {
+  padding-top: 20px;
+  font-size: 160%;
+}
+.description-text {
+  width: 95%;
+}
+/* text area */
+.lead {
+  font-size: 100%;
+}
+/* footer */
+footer {
+  background-color: #9fc8f7;
+  padding-top: 1rem;
+}
+
+/* Top Page */
+.top-image img {
+  width: 100%;
+  height: 100%;
+}
+/* Image-slider */
+.carousel-item img {
+  width: 90%;
+  height: 80%;
+}
+/* cards */
+.cards {
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+.card-item a {
+  color: #222;
+  text-decoration: none;
+}
+.card:hover {
+  opacity: 0.8;
+  box-shadow: 0.5px 0.5px rgb(116, 115, 115);
+}
+
+/* Contact */
+#contact-form {
+  height: 1130px !important;
+}
+.google-form {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  height: 1000px;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+}
+.google-form iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:none;
+  display:block;
+}
+
+
+/* small screen(スマホ横) */
+@media (min-width: 480px) {
+  .display-4 {
+    font-size: 190%;
+  }
+  /* text area */
+  .lead {
+    font-size: 120%;
+  }
+}
+
+/* medium screen(for Tablet) */
+@media (min-width: 768px) {
+  /* Navigation */
+  li.nav-item a.active {
+    border-bottom: 3px solid #E81919;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  /* text area */
+  .lead {
+    font-size: 135%;
+  }
+  /* Image-slider */
+  .carousel-item img {
+    margin-bottom: 50px;
+  }  
+}
+
+/* large screen */
+@media (min-width: 992px) {
+  /* Common */
+  .display-4 {
+    font-size: 230%;
+  }
+  /* Image-slider */
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  /* jumbotron */
+  .jumbotron {
+    margin-bottom: 0;
+  }
+}
+
+/* extra-large screen */
+@media (min-width: 1280px) {
+  /* Common */
+  .display-4 {
+    font-size: 300%;
+  }
+  .jumbotron a {
+    font-size: 150%;
+  }
+  #buyTicketsBtn {
+    width: 220px;
+    height: 60px;
+  }
+  /* text area */
+  .lead {
+    font-size: 150%;
+    margin: 30px 0;
+  }
+
+  .cards {
+    margin-bottom: 5%;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
