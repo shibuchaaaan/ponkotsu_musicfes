@@ -71,6 +71,15 @@ header {
 .lead {
   font-size: 100%;
 }
+.time {
+  font-size: 100%;
+}
+.place {
+  font-size: 100%;
+}
+.place a {
+  color: inherit;
+}
 /* footer */
 footer {
   background-color: #9fc8f7;
@@ -102,14 +111,14 @@ footer {
 }
 
 /* Contact */
-#contact-form {
-  height: 1130px !important;
+.contact-form {
+  padding-top: 4%;
 }
 .google-form {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding-top: 56.25%;
-  height: 1000px;
+  height: 850px;
   overflow: auto;
   -webkit-overflow-scrolling:touch;
 }
@@ -133,6 +142,12 @@ footer {
   .lead {
     font-size: 120%;
   }
+  .time {
+    font-size: 120%;
+  }
+  .place {
+    font-size: 120%;
+  }
 }
 
 /* medium screen(for Tablet) */
@@ -147,6 +162,12 @@ footer {
   /* text area */
   .lead {
     font-size: 135%;
+  }
+  .time {
+    font-size: 135%;
+  }
+  .place {
+    font-size: 115%;
   }
   /* Image-slider */
   .carousel-item img {
@@ -181,6 +202,9 @@ footer {
   .jumbotron a {
     font-size: 150%;
   }
+  .jumbotron {
+    padding: 2rem 1rem 4rem;
+  }
   #buyTicketsBtn {
     width: 220px;
     height: 60px;
@@ -189,6 +213,12 @@ footer {
   .lead {
     font-size: 150%;
     margin: 30px 0;
+  }
+  .time {
+    font-size: 150%;
+  }
+  .place {
+    font-size: 120%;
   }
 
   .cards {
