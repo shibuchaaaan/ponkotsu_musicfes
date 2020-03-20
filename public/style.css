@@ -54,7 +54,7 @@ header {
 }
 /* section */
 .section-title-area {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   padding-top: 0.5rem;
 }
@@ -78,7 +78,7 @@ header {
   font-size: 120%;
 }
 .place {
-  font-size: 90%;
+  font-size: 110%;
 }
 .place a {
   color: inherit;
@@ -210,6 +210,10 @@ footer {
     width: 35%;
     height: 72%;
   }
+  /* section */
+.section-title-area {
+  width: 75%;
+}
 
   /* text area */
   .lead {
