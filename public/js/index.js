@@ -22,4 +22,7 @@ $(window).on('load',function(){
         $('body, html').animate({scrollTop: 0}, 500);
         return false;
     });
+
+    // アー写fadein
+    $('.artist-item').hide().fadeIn(2500);
 });
